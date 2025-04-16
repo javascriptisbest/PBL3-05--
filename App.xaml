@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:PBL3"
              StartupUri="Views/Dang_Nhap.xaml">
     <Application.Resources>
-         
+         hkauhk
     </Application.Resources>
 </Application>
