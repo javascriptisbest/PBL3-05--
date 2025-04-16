@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Dang_Nhap" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="359,234,0,0" VerticalAlignment="Top"/>
+      
 
     </Grid>
 </Window>
