@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace PBL3.Views
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class Dang_Nhap : Window
     {
         public Dang_Nhap()
