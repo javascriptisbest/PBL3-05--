@@ -13,9 +13,117 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="Dang_Nhap" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="Dang_Nhap" Height="382" Width="684">
     <Grid>
-      
+        <Grid.RowDefinitions>
+            <RowDefinition Height="54"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <!-- Header -->
+        <Grid Background="#72CDFF">
+            <TextBlock Text="Đăng nhập" 
+                     FontSize="24" 
+                     FontWeight="Bold" 
+                     VerticalAlignment="Center" 
+                     Margin="54,0,0,0"
+                       Foreground="	#2D2D5A"/>
+            <materialDesign:PackIcon Kind="Home" Width="32" Height="32"  HorizontalAlignment="Left" Margin="15,8,0,0"/>
+        </Grid>
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Picture/background_Dang_Nhap.jpg" Opacity="0.4"/>
+            </Grid.Background>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="136*"/>
+                <ColumnDefinition Width="35*"/>
+
+                <ColumnDefinition Width="171*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Circle with icons nằm trong cùng cột -->
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush/>
+                    </Grid.Background>
+                    <!-- Circle -->
+                    <Ellipse Width="120"
+                             Height="120"
+                             VerticalAlignment="Center"
+                             HorizontalAlignment="Center"
+                             Stroke="Black" 
+                             StrokeThickness="0.5" Fill="White">
+                    </Ellipse>
+                    <Image Source="/Picture/Nguoi_thue.png" 
+                           Stretch="Uniform" 
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Width="100" Height="100" />
+                    <!-- Icon Left -->
+                    <materialDesign:PackIcon Kind="ArrowLeftBoldCircleOutline"
+                                  Width="35" Height="35"
+                                  VerticalAlignment="Center"
+                                  HorizontalAlignment="Left"
+                                  Margin="40,0,0,0"/>
+
+                    <!-- Icon Right -->
+                    <materialDesign:PackIcon Kind="ArrowRightBoldCircleOutline"
+                                  Width="35" Height="35"
+                                  VerticalAlignment="Center"
+                                  HorizontalAlignment="Right"
+                                  Margin="0,0,40,0"/>
+                </Grid>
+            </Grid>
+            <!-- Login Form -->
+            <Border Grid.Column="2" 
+                    Background="White" 
+                    CornerRadius="15" 
+                    BorderThickness="1" 
+                    BorderBrush="Black"
+                    Margin="20,20,20,20"
+             
+                    >
+                <StackPanel Margin="16">
+                    <!-- Email -->
+                    <StackPanel >
+
+                        <TextBox materialDesign:HintAssist.Hint="Email"
+                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                 FontSize="14"
+                                 FontWeight="Bold"
+                                 Margin="10,20,10,0"/>
+                    </StackPanel>
+
+                    <!-- Password -->
+                    <StackPanel>
+
+                        <PasswordBox materialDesign:HintAssist.Hint="Password "
+                                    Style="{StaticResource MaterialDesignOutlinedPasswordBox}"
+                                    FontSize="14"
+                                    FontWeight="Bold"
+                                    Margin="10,20,10,0"/>
+                    </StackPanel>
+
+                    <!-- Login Button -->
+                    <Button Content="Đăng nhập"
+                            Style="{StaticResource MaterialDesignRaisedLightButton}"
+                            HorizontalAlignment="Center"
+                            Margin="0,35,0,10"
+                           Background="#C4EEFF"
+                            Width="99"
+                            Height="36"/>
+                </StackPanel>
+            </Border>
+        </Grid>
     </Grid>
 </Window>
