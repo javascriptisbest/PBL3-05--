@@ -20,6 +20,7 @@ namespace PBL3.Views
         public Dang_Nhap()
         {
             InitializeComponent();
+            DataContext =new ViewModel.DangNhapViewModel();
         }
     }
 }

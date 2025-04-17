@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:PBL3"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:ViewModel="clr-namespace:PBL3.ViewModel"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
@@ -101,7 +102,9 @@
                                  Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                  FontSize="14"
                                  FontWeight="Bold"
-                                 Margin="10,20,10,0"/>
+                                 Margin="10,20,10,0"
+                                 Text="{Binding Email}"
+                                 />
                     </StackPanel>
 
                     <!-- Password -->
