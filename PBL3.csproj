@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Picture\background_DN.jpg" />
+    <None Remove="Picture\Nguoi_Thue.png" />
+    <None Remove="Picture\Nhan_Vien.png" />
+    <None Remove="Picture\Quan_Ly.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Picture\background_DN.jpg" />
+    <Resource Include="Picture\Nguoi_Thue.png" />
+    <Resource Include="Picture\Nhan_Vien.png" />
+    <Resource Include="Picture\Quan_Ly.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
