@@ -41,6 +41,7 @@ namespace PBL3.ViewModel
             PhanQuyen = source_phan_quyen[index];
         }
         [RelayCommand]
+        // xử lý sự kiện khi ấn vào icon right
         public void Buttonright()
         {
             if (++index > 2) index = 0;
